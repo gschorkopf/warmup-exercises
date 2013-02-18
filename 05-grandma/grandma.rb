@@ -10,7 +10,7 @@ class Grandma
 
   def response_from(command)
     if command == "BYE"
-        "OHBAI."
+      "OHBAI."
     elsif command == command.upcase
       "NO, NOT SINCE #{year}"
     else
