@@ -17,3 +17,5 @@ class Scrabble
     VALUES.find{|key, value| key.include?(letter)}[1]
   end
 end
+
+puts Scrabble.score("hello")
