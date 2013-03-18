@@ -23,23 +23,19 @@ class SayTest < MiniTest::Unit::TestCase
     assert_equal '1 million', Say.new(10**6).in_english
   end
 
-  def test_1_million_and_some_crumbs
-    skip
-    assert_equal '1 million 2', Say.new(1000002).in_english
+  def test_2_million_and_some_crumbs
+    assert_equal '2 million 2', Say.new(2000002).in_english
   end
 
   def test_1_million_2_thousand_345
-    skip
     assert_equal '1 million 2 thousand 345', Say.new(1002345).in_english
   end
 
   def test_1_billion
-    skip
     assert_equal '1 billion', Say.new(10**9).in_english
   end
 
   def test_really_big_number
-    skip
     expected = '987 billion 654 million 321 thousand 123'
     assert_equal expected, Say.new(987654321123).in_english
   end
