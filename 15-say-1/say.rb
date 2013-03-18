@@ -23,7 +23,8 @@ class Say
 
   def large_num
     first, second = num.to_s.split("")
-    Say.tens[first] + Say.ones[second]
+    result = Say.tens[first] + Say.ones[second]
+    `say #{result}`
   end
 
   def self.tens
