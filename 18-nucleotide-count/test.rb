@@ -25,6 +25,12 @@ class DNATest < MiniTest::Unit::TestCase
     assert_equal 1, DNA.new('GGGGGTAACCCGG').count('T')
   end
 
+  def test_counts_each_nucleotide_once
+    dna = DNA.new('GATTACA')
+    dna.count('T')
+    assert_equal 2, dna.count('T')
+  end
+
   def test_counts_all_nucleotides
     s = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC"
     dna = DNA.new(s)
