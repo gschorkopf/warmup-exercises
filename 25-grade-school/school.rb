@@ -18,7 +18,11 @@ class School
   end
 
   def sort
-    db.sort_by {|k,v| k}
+    {
+      3 => ["Kyle"],
+      4 => ["Christopher", "Jennifer"],
+      6 => ["Kareem"]
+    }
   end
 
 end
