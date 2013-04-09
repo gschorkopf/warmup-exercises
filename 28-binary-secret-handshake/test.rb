@@ -9,25 +9,21 @@ class SecretHandshakeTest < MiniTest::Unit::TestCase
   end
 
   def test_handshake_10_to_double_blink
-    skip
     handshake = SecretHandshake.new("10")
     assert_equal ["double blink"], handshake.commands
   end
 
   def test_handshake_100_to_close_your_eyes
-    skip
     handshake = SecretHandshake.new("100")
     assert_equal ["close your eyes"], handshake.commands
   end
 
   def test_handshake_1000_to_jump
-    skip
     handshake = SecretHandshake.new("1000")
     assert_equal ["jump"], handshake.commands
   end
 
   def test_handshake_11_to_wink_and_double_blink
-    skip
     handshake = SecretHandshake.new("11")
     assert_equal ["wink","double blink"], handshake.commands
   end
